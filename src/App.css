@@ -1,25 +1,25 @@
-.App {
+/* .App {
   display: flex;
   max-width: 100vw;
-}
+} */
 
 /* .body {
   display: flex;
   
 } */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -30,39 +30,43 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
-section {
+/* section {
   max-width: 100vw;
-}
+} */
 
 .nav {
   display: flex;
-  padding-left: 15%;
+  /* padding-left: 15%;
   padding-right: 15%;
   padding-top: 3%;
-  padding-bottom: 3%;
-  gap: 4%;
-  max-width: 100vw;
-  flex-direction: row;
-  justify-content: space-around;
+  padding-bottom: 3%; */
+  /* gap: 4%; */
+  /* max-width: 100vw; */
+  /* flex-direction: row; */
+  justify-content: space-between;
 }
 
 .nav a {
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: yellow;
+  text-decoration: none;
 }
 
 .nav ul {
   display: flex;
   /* grid-auto-flow: column; */
-  gap: 3%;
+  gap: 1rem;
   justify-items: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .nav img {
-  justify-self: flex-start;
   align-self: center;
 }
 
@@ -72,21 +76,22 @@ ul {
 
 .header {
   background-color: #495e57;
-  height: 75vh;
+  height: 50vh;
+  text-align: center;
   display: flex;
   grid-template-columns: repeat(2, 1fr);
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
   color: white;
-  padding-right: 15%;
+  /* padding-right: 15%;
   padding-left: 15%;
   padding-top: 5%;
-  padding-bottom: 2%;
-  margin-bottom: 5%;
+  padding-bottom: 2%; */
+  /* margin-bottom: 5%; */
   justify-items: stretch;
-  max-width: 100vw;
+  /* max-width: 100vw; */
   flex-wrap: nowrap;
-  max-width: 100vw;
+  /* max-width: 100vw; */
 }
 
 .header-right {
@@ -98,12 +103,18 @@ ul {
   border-radius: 3rem;
   height: 7%;
   justify-self: end;
+  display: none;
 }
 
 .header-left {
   display: grid;
-  margin-top: 0;
+  /* margin-top: 0; */
+  text-align: left;
   justify-items: start;
+  width: 50%;
+  border: 3px solid yellow;
+  padding: 4rem;
+  border-radius: 0.5rem;
 }
 
 .header-left h1 {
