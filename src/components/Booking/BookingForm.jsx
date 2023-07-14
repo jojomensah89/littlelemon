@@ -1,5 +1,5 @@
 import { useReducer, useContext } from "react";
-import { AvailableTimesReducer, initializeTimes } from "./bookingReducer"
+import { AvailableTimesReducer, initializeTimes } from "./bookingReducer";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { NavigateContext } from "../../context/NavigateContext";
@@ -51,6 +51,7 @@ export default function BookingForm({ onSubmit }) {
             <Form className="form">
               <label htmlFor="name">First Name</label>
               <Field
+                className="form-field"
                 type="text"
                 value={state.name}
                 id="name"
@@ -64,6 +65,7 @@ export default function BookingForm({ onSubmit }) {
 
               <label htmlFor="date">Date</label>
               <Field
+                className="form-field"
                 value={values.date}
                 type="date"
                 role="input"
@@ -83,6 +85,7 @@ export default function BookingForm({ onSubmit }) {
 
               <label htmlFor="time">Time</label>
               <Field
+                className="form-field"
                 value={state.time}
                 id="time"
                 name="time"
@@ -101,6 +104,7 @@ export default function BookingForm({ onSubmit }) {
 
               <label htmlFor="occasion">Occasion</label>
               <Field
+                className="form-field"
                 values={values.occasion}
                 as="select"
                 id="occasion"
@@ -117,6 +121,7 @@ export default function BookingForm({ onSubmit }) {
 
               <label htmlFor="guests">Number of Guests</label>
               <Field
+                className="form-field"
                 value={state.guests}
                 type="number"
                 id="guests"

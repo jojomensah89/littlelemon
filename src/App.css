@@ -137,10 +137,10 @@ h1 {
 }
 
 .main {
+  width: 100%;
   display: grid;
   justify-content: space-evenly;
-  padding-right: 25%;
-  padding-left: 25%;
+  margin: 0 auto;
   justify-items: stretch;
 }
 
@@ -226,6 +226,22 @@ h1 {
   align-items: center;
 }
 
+.form-field {
+  border-radius: 0.25rem;
+  outline: none;
+  padding: 1rem;
+}
+.form {
+  display: flex;
+}
+form button {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: #c5a815;
+}
+form button:hover {
+  background-color: #495e57;
+}
 
 #testimonials {
   display: flex;
@@ -237,21 +253,32 @@ h1 {
 }
 
 .testCard {
+  box-shadow: 0 10px 20px;
   display: grid;
   grid-template-rows: 1fr;
-  background-color: #edefee;
+  border-radius: 1rem;
 }
-
+.testCard:hover {
+  scale: 1.1;
+  transition: ease-in-out 0.5s;
+}
+#testCardRating {
+  text-align: center;
+  font-weight: 500;
+}
+#testCardName {
+  text-align: center;
+}
 #testCardMid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1fr);
   align-items: center;
-  justify-items: end;
 }
 
 .testCard img {
-  max-width: 100%;
-  max-height: auto;
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
 }
 
 .errorMessage {
@@ -274,20 +301,22 @@ h1 {
 }
 
 .about {
-  display: grid;
-  grid-auto-rows: auto;
-  justify-items: center;
-  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 #about {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  max-width: 100%;
-  gap: 2%;
+  align-items: center;
+  padding: 3rem;
+}
+#aboutLeft {
+  width: 100%;
+}
+#about img {
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 
 #aboutTitle {
