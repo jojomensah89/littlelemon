@@ -8,7 +8,7 @@ function Header() {
       <div className="header-left">
         <h1>Little Lemon</h1>
         <h2 id="headerH2">Chicago</h2>
-        <h3 >
+        <h3>
           This is a hand-crafted site built as a Capstone Project by T.C. Cox
           for Metas Front-End Developer Professional Certification.
         </h3>
@@ -17,7 +17,7 @@ function Header() {
           restaurant site.
         </p>
         <Link to="/booking">
-          <Button>Reserve Now!</Button>
+          <Button>Reserve a Table</Button>
         </Link>
       </div>
       <div className="header-right">
